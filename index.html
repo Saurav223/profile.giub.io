@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saurav Portfolio website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+     *{
+        margin: 0;
+        padding: 0;
+     }
+        body{
+            background-color: rgb(2, 2, 48);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color:rgb(2, 2, 43);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 25px;
+        }
+        nav ul li a{
+            color:white;
+            text-decoration: none;
+        }
+        nav ul li a:hover{
+            color: rgb( 143, 153, 226);
+        }
+        .left{
+            font-size: 1.8rem;
+        }
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            margin: 23px 0;
+        }
+        .firstsection div{
+            width: 30%; 
+        }
+        .leftsection{
+            background-color:transparent;
+            font-size: 1.5rem;
+            margin: 1px 0;
+        }
+        .backvideo{
+            position: absolute;
+            right: 0;
+            top: 1px;
+            z-index: -1;
+        }
+        @media (min-aspect-ratio:16/9){
+            .backvideo{
+                width: 100%;
+                height: auto;
+            }
+        }
+        @media (max-aspect-ratio:16/9){
+            .backvideo{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .content{
+            text-align: center;
+            margin: 250px;
+        }
+        .content h1{
+            font-size: 60px;
+            color: white;
+            font-weight: 600;
+        }
+        .content a{
+            text-decoration: none;
+            display: inline-block;
+            color: #fff;
+            font-size: 25px;
+            border: 2px solid #fff;
+            padding: 10px 30px;
+            border-radius: 25px;
+            margin-top: 10px;
+        }
+        .content a:hover{
+            color: rgb( 143, 153, 226);
+            border-color: rgb(143,153 , 226);
+        }
+        .bottom h2{
+            position: relative;
+            top: -170px;
+            left: 500px;
+        }
+        .bottom hr{
+            position: relative;
+            top: -110px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        #element{
+            color: rgb(101, 101, 178);
+        }
+        .bottom img{
+            background-color: transparent;
+            width: 70;
+            height: 60px;
+            position: relative;
+            top: -115px;
+            left: 430px;
+        }
+            </style>
+</head>
+<body>
+   <header>
+    <nav>
+        <div class="left">Saurav 's Portfolio </div>
+        <div class="right">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">about</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="/">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+   </header>
+   <main>
+    <section class="firstsection">
+        <video autoplay loop muted plays-inline class="backvideo"> <source src="spidy.blend.mp4"></video>
+    </section>
+    <div class="content">
+        <h1><span id="element"></span></h1>
+        <span>Web-Developer and 3D Animator</span>
+            <div></div><a href="#">Learn More</a>
+        </div>
+
+   </main> 
+   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+   <script>
+    var typed = new Typed('#element', {
+      strings: ['SAURAV SUBEDI'],
+      typeSpeed: 150,
+    });
+  </script>
+  <section class="bottom">
+    <hr>
+    <img src="pngegg.png">
+    <h2>Unraveling the Symphony of My Creative DNA</h2>
+  </section>
+</body>
+</html>
